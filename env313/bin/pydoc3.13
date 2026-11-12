@@ -1,0 +1,5 @@
+#!/scratch/work/zhangx29/huawei_tech_arena_2026/env313/bin/python3.13
+
+import pydoc
+if __name__ == '__main__':
+    pydoc.cli()

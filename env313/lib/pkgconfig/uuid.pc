@@ -1,0 +1,11 @@
+prefix=/scratch/work/zhangx29/huawei_tech_arena_2026/env313
+exec_prefix=/scratch/work/zhangx29/huawei_tech_arena_2026/env313
+libdir=/scratch/work/zhangx29/huawei_tech_arena_2026/env313/lib
+includedir=/scratch/work/zhangx29/huawei_tech_arena_2026/env313/include
+
+Name: uuid
+Description: Universally unique id library
+Version: 2.42.4
+Cflags: -I${includedir}/uuid
+Libs.private:  -lpthread
+Libs: -L${libdir} -luuid

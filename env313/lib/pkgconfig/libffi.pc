@@ -1,0 +1,11 @@
+prefix=/scratch/work/zhangx29/huawei_tech_arena_2026/env313
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+toolexeclibdir=${libdir}
+includedir=/scratch/work/zhangx29/huawei_tech_arena_2026/env313/include
+
+Name: libffi
+Description: Library supporting Foreign Function Interfaces
+Version: 3.7.0
+Libs: -L${toolexeclibdir} -lffi
+Cflags: -I${includedir}

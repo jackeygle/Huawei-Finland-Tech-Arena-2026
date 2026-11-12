@@ -1,0 +1,61 @@
+{
+    "arch": "x86_64",
+    "build": "hd51c5da_100_cp313",
+    "build_number": 100,
+    "build_string": "hd51c5da_100_cp313",
+    "channel": "conda-forge",
+    "constrains": [],
+    "depends": [
+        "__glibc >=2.17,<3.0.a0",
+        "libgcc >=15"
+    ],
+    "extracted_package_dir": "/scratch/work/zhangx29/.conda_pkgs/libpython-3.13.18-hd51c5da_100_cp313",
+    "files": [
+        "lib/libpython3.13.so",
+        "lib/libpython3.13.so.1.0",
+        "lib/libpython3.so"
+    ],
+    "fn": "libpython-3.13.18-hd51c5da_100_cp313.conda",
+    "license": "Python-2.0",
+    "link": {
+        "source": "/scratch/work/zhangx29/.conda_pkgs/libpython-3.13.18-hd51c5da_100_cp313",
+        "type": 1
+    },
+    "md5": "eb85e5c7b22eb523e07fa1140b91b9ef",
+    "name": "libpython",
+    "package_tarball_full_path": "/scratch/work/zhangx29/.conda_pkgs/libpython-3.13.18-hd51c5da_100_cp313.tar.bz2",
+    "paths_data": {
+        "paths": [
+            {
+                "_path": "lib/libpython3.13.so",
+                "path_type": "softlink",
+                "sha256_in_prefix": "7bab6069a9989d11785013837c2277d8bb9761266990c4153fca926b2a6d03af",
+                "size_in_bytes": 33628824
+            },
+            {
+                "_path": "lib/libpython3.13.so.1.0",
+                "path_type": "hardlink",
+                "sha256": "6f03a3124c1faa11fb71cd72cba8eee17c93a229e810a6e3d8cc2e3859bd6040",
+                "sha256_in_prefix": "7bab6069a9989d11785013837c2277d8bb9761266990c4153fca926b2a6d03af",
+                "size_in_bytes": 33628824
+            },
+            {
+                "_path": "lib/libpython3.so",
+                "path_type": "hardlink",
+                "sha256": "1017ac02b916ff3181e7c71bc70bc931ad5422abe180cdc11d1a9a58f0da9023",
+                "sha256_in_prefix": "1017ac02b916ff3181e7c71bc70bc931ad5422abe180cdc11d1a9a58f0da9023",
+                "size_in_bytes": 14920
+            }
+        ],
+        "paths_version": 1
+    },
+    "platform": "linux",
+    "requested_spec": "",
+    "sha256": "8fb44e69c90a7cb942a6388fae4c7493dbebbae3c9e11cc34d1c464256dc3af1",
+    "size": 9721079,
+    "subdir": "linux-64",
+    "timestamp": 1793015613,
+    "track_features": "",
+    "url": "https://conda.anaconda.org/conda-forge/linux-64/libpython-3.13.18-hd51c5da_100_cp313.conda",
+    "version": "3.13.18"
+}
