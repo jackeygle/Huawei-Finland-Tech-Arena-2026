@@ -1,0 +1,6 @@
+--u_class 1 --bnd 3 --pool 5 --dils 1,2,4,8,16 --seed 0 --tag u4so_p5d5_s0
+--u_class 1 --bnd 3 --pool 5 --dils 1,2,4,8,16 --seed 1 --tag u4so_p5d5_s1
+--u_class 1 --bnd 3 --pool 5 --dils 1,2,4,8,16 --seed 2 --tag u4so_p5d5_s2
+--u_class 1 --bnd 3 --pool 10 --dils 1,2,4,8 --seed 0 --tag u4so_p10d4_s0
+--u_class 1 --bnd 3 --pool 10 --dils 1,2,4,8 --seed 1 --tag u4so_p10d4_s1
+--u_class 1 --bnd 3 --pool 10 --dils 1,2,4,8 --seed 2 --tag u4so_p10d4_s2

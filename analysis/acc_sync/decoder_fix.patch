@@ -1,0 +1,54 @@
+--- submission/adm_model.py	2026-11-12 12:28:16.000000000 +0200
++++ analysis/acc_sync/adm_model_patched.py	2026-11-12 12:38:50.000000000 +0200
+@@ -31,6 +31,8 @@
+ TEMPLATES = None                           # protocol templates {name: [segment dicts]} (set when packaging)
+ DECODE_ALPHA = 0.002                       # emission weight of the template alignment
+ DECODE_RES = 10                            # alignment resolution in seconds (5 and 10 give the same CV score)
++DECODE_CAP = 4.0                           # max penalty (nats) for a recording that ends inside a segment
++                                           # earlier than its mean duration (0 = free truncation, the old behaviour)
+ VERSION_BY_DATE = False                    # pick protocol version from the recording date (dataset property)
+ 
+ 
+@@ -495,7 +497,7 @@
+     return d, lp, mu, sd
+ 
+ 
+-def align(logp, segs, alpha, res=5, skip_pen=50.0):
++def align(logp, segs, alpha, res=5, skip_pen=50.0, cap=DECODE_CAP):
+     """logp: (T, 3) per-second log-probabilities. Returns (score, per-second segment index)."""
+     T = len(logp)
+     n = -(-T // res)
+@@ -528,7 +530,8 @@
+         dd = np.arange(1 if not seg["opt"] else 0, n + 1)
+         st2 = n - dd
+         em2 = (C[n, seg["c"]] - C[st2, seg["c"]]) if seg["c"] >= 0 else 0.0
+-        lp2 = np.where(dd <= mu, 0.0, -0.5 * ((dd - mu) / sd) ** 2)
++        z2 = 0.5 * ((dd - mu) / sd) ** 2                                  # short ending: penalised up to cap
++        lp2 = np.where(dd <= mu, -np.minimum(z2, cap), -z2)
+         e = F[s][st2] + em2 + lp2 - skip_pen * left
+         j = int(e.argmax())
+         if e[j] > best_end:
+@@ -577,7 +580,22 @@
+     if alpha_sel is not None:
+         _, seg = align(lp, segs, a_of(key, alpha), res, skip_pen)
+     cls = np.array([g["c"] for g in segs])[np.maximum(seg, 0)]
+-    out = np.where((seg >= 0) & (cls >= 0), cls, prob.argmax(axis=1))
++    c_of = np.where(seg >= 0, cls, -1)
++    out = np.where(c_of >= 0, c_of, prob.argmax(axis=1))
++    # unscored (U) seconds: argmax restricted to the classes of the nearest scored segments before / after
++    idx = np.flatnonzero(c_of >= 0)
++    u = c_of < 0
++    if len(idx) and u.any():
++        T = len(c_of)
++        ar = np.arange(T)
++        pi = np.searchsorted(idx, ar, side="right") - 1
++        ni = np.searchsorted(idx, ar, side="left")
++        pc = np.where(pi >= 0, c_of[idx[np.maximum(pi, 0)]], -1)
++        nc = np.where(ni < len(idx), c_of[idx[np.minimum(ni, len(idx) - 1)]], -1)
++        allowed = np.zeros((T, 3), bool)
++        allowed[ar[pc >= 0], pc[pc >= 0]] = True
++        allowed[ar[nc >= 0], nc[nc >= 0]] = True
++        out[u] = np.where(allowed, prob, -1.0)[u].argmax(axis=1)
+     return (out, key) if return_key else out
+ 
+ 
