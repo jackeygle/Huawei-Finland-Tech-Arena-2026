@@ -1,0 +1,17 @@
+args: --u_class 1 --bnd 3 --pool 10 --dils 1,2,4,8 --steps 6000 --seed 1 --tag p10st6k_s1
+model=tcn features=175 sessions=85 device=cuda
+  [subject] fold 0 loss 0.163  117s
+  [subject] fold 1 loss 0.234  247s
+  [subject] fold 2 loss 0.349  378s
+  [subject] fold 3 loss 0.285  509s
+  [subject] fold 4 loss 0.241  639s
+  [subject] fold 5 loss 0.207  771s
+p10st6k_s1 subject  macro-F1=0.7897 quality=63.2/80 F1 Rest/Stress/Act=[0.831 0.617 0.921]
+  confusion (rows = true Rest/Stress/Activity):
+[[5071  509  467]
+ [ 404  775   18]
+ [ 680   30 6936]]
+  [session] fold 0 loss 0.226  135s
+  [session] fold 1 loss 0.193  271s
+  [session] fold 2 loss 0.185  400s
+  [session] fold 3 loss 0.283  537s

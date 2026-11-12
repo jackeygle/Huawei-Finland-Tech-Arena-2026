@@ -1,0 +1,73 @@
+##### local,rel,sess
+features: 135 (local,rel,sess)  rows: 159264  scored: 147311
+  [subject] fold 0 done 20s
+  [subject] fold 1 done 39s
+  [subject] fold 2 done 59s
+  [subject] fold 3 done 78s
+  [subject] fold 4 done 98s
+  [subject] fold 5 done 118s
+subject  smooth=  0s  macro-F1=0.6907  quality=55.3/80  F1 Rest/Stress/Act=[0.785 0.417 0.87 ]
+  confusion (rows = true Rest/Stress/Activity):
+[[4848  255  944]
+ [ 637  408  152]
+ [ 822   95 6729]]
+  [session] fold 0 done 20s
+  [session] fold 1 done 39s
+  [session] fold 2 done 59s
+  [session] fold 3 done 78s
+  [session] fold 4 done 98s
+  [session] fold 5 done 118s
+session  smooth=  0s  macro-F1=0.7025  quality=56.2/80  F1 Rest/Stress/Act=[0.794 0.428 0.886]
+  confusion (rows = true Rest/Stress/Activity):
+[[4897  271  879]
+ [ 686  422   89]
+ [ 708   84 6854]]
+##### local,rel,sess,sess2
+features: 159 (local,rel,sess,sess2)  rows: 159264  scored: 147311
+  [subject] fold 0 done 21s
+  [subject] fold 1 done 42s
+  [subject] fold 2 done 63s
+  [subject] fold 3 done 84s
+  [subject] fold 4 done 105s
+  [subject] fold 5 done 126s
+subject  smooth=  0s  macro-F1=0.6897  quality=55.2/80  F1 Rest/Stress/Act=[0.779 0.424 0.866]
+  confusion (rows = true Rest/Stress/Activity):
+[[4872  280  895]
+ [ 645  420  132]
+ [ 944   82 6620]]
+  [session] fold 0 done 21s
+  [session] fold 1 done 42s
+  [session] fold 2 done 63s
+  [session] fold 3 done 84s
+  [session] fold 4 done 106s
+  [session] fold 5 done 127s
+session  smooth=  0s  macro-F1=0.6908  quality=55.3/80  F1 Rest/Stress/Act=[0.777 0.435 0.861]
+  confusion (rows = true Rest/Stress/Activity):
+[[4914  254  879]
+ [ 666  434   97]
+ [1024  110 6512]]
+##### local,rel,sess,sess2,pos
+features: 163 (local,rel,sess,sess2,pos)  rows: 159264  scored: 147311
+  [subject] fold 0 done 21s
+  [subject] fold 1 done 41s
+  [subject] fold 2 done 61s
+  [subject] fold 3 done 82s
+  [subject] fold 4 done 103s
+  [subject] fold 5 done 123s
+subject  smooth=  0s  macro-F1=0.7878  quality=63.0/80  F1 Rest/Stress/Act=[0.851 0.632 0.88 ]
+  confusion (rows = true Rest/Stress/Activity):
+[[5233  129  685]
+ [ 274  701  222]
+ [ 740  190 6716]]
+  [session] fold 0 done 21s
+  [session] fold 1 done 42s
+  [session] fold 2 done 64s
+  [session] fold 3 done 85s
+  [session] fold 4 done 105s
+  [session] fold 5 done 126s
+session  smooth=  0s  macro-F1=0.7922  quality=63.4/80  F1 Rest/Stress/Act=[0.847 0.651 0.878]
+  confusion (rows = true Rest/Stress/Activity):
+[[5309  131  607]
+ [ 321  752  124]
+ [ 858  229 6559]]
+ALLDONE

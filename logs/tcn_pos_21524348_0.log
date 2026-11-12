@@ -1,0 +1,26 @@
+variant: +pos seed 0
+model=tcn features=179 sessions=85 device=cuda
+  [subject] fold 0 loss 0.017  42s
+  [subject] fold 1 loss 0.022  85s
+  [subject] fold 2 loss 0.027  129s
+  [subject] fold 3 loss 0.022  173s
+  [subject] fold 4 loss 0.019  216s
+  [subject] fold 5 loss 0.041  258s
+pos_s0 subject  macro-F1=0.7888 quality=63.1/80 F1 Rest/Stress/Act=[0.817 0.643 0.906]
+  confusion (rows = true Rest/Stress/Activity):
+[[4967  568  512]
+ [ 318  860   19]
+ [ 821   51 6774]]
+  [session] fold 0 loss 0.017  42s
+  [session] fold 1 loss 0.028  84s
+  [session] fold 2 loss 0.020  127s
+  [session] fold 3 loss 0.126  169s
+  [session] fold 4 loss 0.022  213s
+  [session] fold 5 loss 0.037  256s
+pos_s0 session  macro-F1=0.7946 quality=63.6/80 F1 Rest/Stress/Act=[0.82  0.655 0.909]
+  confusion (rows = true Rest/Stress/Activity):
+[[4885  525  637]
+ [ 301  856   40]
+ [ 679   36 6931]]
+params 74643
+ALLDONE

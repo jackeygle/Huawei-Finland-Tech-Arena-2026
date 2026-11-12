@@ -1,0 +1,26 @@
+variant: --groups local,rel,sess --tag spd_nosig_s2 seed 2
+model=tcn features=135 sessions=85 device=cuda
+  [subject] fold 0 loss 0.013  56s
+  [subject] fold 1 loss 0.022  115s
+  [subject] fold 2 loss 0.031  176s
+  [subject] fold 3 loss 0.012  235s
+  [subject] fold 4 loss 0.017  294s
+  [subject] fold 5 loss 0.014  354s
+spd_nosig_s2 subject  macro-F1=0.7603 quality=60.8/80 F1 Rest/Stress/Act=[0.807 0.573 0.901]
+  confusion (rows = true Rest/Stress/Activity):
+[[4942  535  570]
+ [ 436  722   39]
+ [ 818   66 6762]]
+  [session] fold 0 loss 0.012  60s
+  [session] fold 1 loss 0.018  120s
+  [session] fold 2 loss 0.017  178s
+  [session] fold 3 loss 0.019  237s
+  [session] fold 4 loss 0.013  297s
+  [session] fold 5 loss 0.023  357s
+spd_nosig_s2 session  macro-F1=0.7732 quality=61.9/80 F1 Rest/Stress/Act=[0.815 0.588 0.916]
+  confusion (rows = true Rest/Stress/Activity):
+[[4797  568  682]
+ [ 389  743   65]
+ [ 534   18 7094]]
+params 72531
+ALLDONE

@@ -1,0 +1,25 @@
+##### local,rel,sess,eda2,hrv,spec
+features: 175 (local,rel,sess,eda2,hrv,spec)  rows: 159264  scored: 147311
+  [subject] fold 0 done 38s
+  [subject] fold 1 done 91s
+  [subject] fold 2 done 119s
+  [subject] fold 3 done 141s
+  [subject] fold 4 done 163s
+  [subject] fold 5 done 188s
+subject  smooth=  0s  macro-F1=0.7116  quality=56.9/80  F1 Rest/Stress/Act=[0.792 0.467 0.876]
+  confusion (rows = true Rest/Stress/Activity):
+[[4958  251  838]
+ [ 620  457  120]
+ [ 894   52 6700]]
+  [session] fold 0 done 28s
+  [session] fold 1 done 55s
+  [session] fold 2 done 82s
+  [session] fold 3 done 108s
+  [session] fold 4 done 135s
+  [session] fold 5 done 157s
+session  smooth=  0s  macro-F1=0.7167  quality=57.3/80  F1 Rest/Stress/Act=[0.803 0.459 0.888]
+  confusion (rows = true Rest/Stress/Activity):
+[[4971  279  797]
+ [ 640  471   86]
+ [ 726  105 6815]]
+ALLDONE

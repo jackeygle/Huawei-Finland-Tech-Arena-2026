@@ -1,0 +1,13 @@
+model=tcn features=175 sessions=85 device=cuda
+  [subject] fold 0 loss 0.102  85s
+  [subject] fold 1 loss 0.090  175s
+  [subject] fold 2 loss 0.085  265s
+  [subject] fold 3 loss 0.102  358s
+  [subject] fold 4 loss 0.112  453s
+  [subject] fold 5 loss 0.092  551s
+u4so_s2 subject  macro-F1=0.7747 quality=62.0/80 F1 Rest/Stress/Act=[0.827 0.582 0.915]
+  confusion (rows = true Rest/Stress/Activity):
+[[5064  445  538]
+ [ 467  692   38]
+ [ 670   43 6933]]
+params 74647

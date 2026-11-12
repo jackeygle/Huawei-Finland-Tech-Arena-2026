@@ -1,0 +1,30 @@
+{
+ "name": "v8_p10_model",
+ "seed": 0,
+ "steps": 3000,
+ "batch": 16,
+ "crop": 900,
+ "lr": 0.002,
+ "wd": 0.01,
+ "featdrop": 0.1,
+ "ch": 48,
+ "drop": 0.2,
+ "bnd_k": 3,
+ "pool": 10,
+ "dils": "1,2,4,8",
+ "bnd_weight": 1.0,
+ "model": "tcn",
+ "u_class": 1,
+ "bnd": 3,
+ "n_features": 175,
+ "feature_groups": [
+  "local",
+  "rel",
+  "sess",
+  "eda2",
+  "hrv",
+  "spec"
+ ],
+ "params": 46423,
+ "train_seconds": 147311
+}

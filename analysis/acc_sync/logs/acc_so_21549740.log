@@ -1,0 +1,7 @@
+ [ 179  952   66]
+ [ 439  454 6753]]
+params 74647
+u4so_s0 subject  macro-F1=0.7787 quality=62.3/80 F1 Rest/Stress/Act=[0.829 0.595 0.912]
+u4so_s1 subject  macro-F1=0.7751 quality=62.0/80 F1 Rest/Stress/Act=[0.825 0.59  0.911]
+u4so_s2 subject  macro-F1=0.7747 quality=62.0/80 F1 Rest/Stress/Act=[0.827 0.582 0.915]
+ALLDONE

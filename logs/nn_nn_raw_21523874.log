@@ -1,0 +1,26 @@
+Tesla V100-SXM2-16GB
+model=raw features=175 sessions=85 device=cuda
+  [subject] fold 0 loss 0.018  25s
+  [subject] fold 1 loss 0.028  49s
+  [subject] fold 2 loss 0.064  73s
+  [subject] fold 3 loss 0.039  98s
+  [subject] fold 4 loss 0.021  124s
+  [subject] fold 5 loss 0.033  151s
+raw subject  macro-F1=0.6971 quality=55.8/80 F1 Rest/Stress/Act=[0.749 0.464 0.878]
+  confusion (rows = true Rest/Stress/Activity):
+[[4295  579 1173]
+ [ 542  565   90]
+ [ 577   96 6973]]
+  [session] fold 0 loss 0.023  26s
+  [session] fold 1 loss 0.027  53s
+  [session] fold 2 loss 0.013  79s
+  [session] fold 3 loss 0.017  104s
+  [session] fold 4 loss 0.023  130s
+  [session] fold 5 loss 0.070  156s
+raw session  macro-F1=0.7011 quality=56.1/80 F1 Rest/Stress/Act=[0.752 0.477 0.875]
+  confusion (rows = true Rest/Stress/Activity):
+[[4374  552 1121]
+ [ 536  574   87]
+ [ 677   86 6883]]
+params 78827
+ALLDONE

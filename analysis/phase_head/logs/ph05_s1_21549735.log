@@ -1,0 +1,26 @@
+args: --u_class 1 --bnd 1 --phase_aux 0.5 --seed 1 --tag ph05_s1
+model=tcn features=175 sessions=85 device=cuda
+  [subject] fold 0 loss 0.098  66s
+  [subject] fold 1 loss 0.096  134s
+  [subject] fold 2 loss 0.127  202s
+  [subject] fold 3 loss 0.169  272s
+  [subject] fold 4 loss 0.109  340s
+  [subject] fold 5 loss 0.093  407s
+ph05_s1 subject  macro-F1=0.7766 quality=62.1/80 F1 Rest/Stress/Act=[0.819 0.596 0.914]
+  confusion (rows = true Rest/Stress/Activity):
+[[5026  540  481]
+ [ 430  747   20]
+ [ 765   22 6859]]
+  [session] fold 0 loss 0.145  64s
+  [session] fold 1 loss 0.180  129s
+  [session] fold 2 loss 0.121  194s
+  [session] fold 3 loss 0.133  257s
+  [session] fold 4 loss 0.093  320s
+  [session] fold 5 loss 0.112  385s
+ph05_s1 session  macro-F1=0.7862 quality=62.9/80 F1 Rest/Stress/Act=[0.823 0.617 0.918]
+  confusion (rows = true Rest/Stress/Activity):
+[[4975  513  559]
+ [ 418  773    6]
+ [ 654   21 6971]]
+params 75137
+ALLDONE

@@ -1,0 +1,26 @@
+variant: --ch 32 --tag tcnA_ch32
+model=tcn features=175 sessions=85 device=cuda
+  [subject] fold 0 loss 0.025  34s
+  [subject] fold 1 loss 0.040  68s
+  [subject] fold 2 loss 0.034  103s
+  [subject] fold 3 loss 0.062  138s
+  [subject] fold 4 loss 0.025  174s
+  [subject] fold 5 loss 0.066  208s
+tcnA_ch32 subject  macro-F1=0.7666 quality=61.3/80 F1 Rest/Stress/Act=[0.801 0.597 0.901]
+  confusion (rows = true Rest/Stress/Activity):
+[[4786  634  627]
+ [ 349  803   45]
+ [ 767   55 6824]]
+  [session] fold 0 loss 0.046  35s
+  [session] fold 1 loss 0.049  69s
+  [session] fold 2 loss 0.037  103s
+  [session] fold 3 loss 0.096  137s
+  [session] fold 4 loss 0.042  171s
+  [session] fold 5 loss 0.028  205s
+tcnA_ch32 session  macro-F1=0.7725 quality=61.8/80 F1 Rest/Stress/Act=[0.807 0.602 0.908]
+  confusion (rows = true Rest/Stress/Activity):
+[[4725  682  640]
+ [ 309  850   38]
+ [ 628   94 6924]]
+params 35299
+ALLDONE

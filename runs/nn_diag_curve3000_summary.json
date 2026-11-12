@@ -1,0 +1,31 @@
+{
+ "subject": {
+  "macro_f1": 0.7823558043796917,
+  "f1": [
+   0.8259587020648967,
+   0.6081778483525209,
+   0.9129308627216577
+  ]
+ },
+ "params": 74451,
+ "args": {
+  "model": "tcn",
+  "split": "subject",
+  "folds": 6,
+  "seed": 0,
+  "fold_seed": 0,
+  "ch": 48,
+  "drop": 0.2,
+  "steps": 3000,
+  "batch": 16,
+  "crop": 900,
+  "lr": 0.002,
+  "wd": 0.01,
+  "featdrop": 0.1,
+  "tag": "diag_curve3000",
+  "groups": "local,rel,sess,eda2,hrv,spec",
+  "eval_every": 250,
+  "exclude_train": "",
+  "boundary_ignore": 0
+ }
+}

@@ -1,0 +1,26 @@
+variant: --steps 3000 --tag fu_steps3000 seed 1
+model=tcn features=175 sessions=85 device=cuda
+  [subject] fold 0 loss 0.007  80s
+  [subject] fold 1 loss 0.014  165s
+  [subject] fold 2 loss 0.015  245s
+  [subject] fold 3 loss 0.009  322s
+  [subject] fold 4 loss 0.008  411s
+  [subject] fold 5 loss 0.010  501s
+fu_s1_steps3000_s1 subject  macro-F1=0.7636 quality=61.1/80 F1 Rest/Stress/Act=[0.813 0.576 0.902]
+  confusion (rows = true Rest/Stress/Activity):
+[[4986  535  526]
+ [ 417  733   47]
+ [ 821   78 6747]]
+  [session] fold 0 loss 0.013  81s
+  [session] fold 1 loss 0.017  154s
+  [session] fold 2 loss 0.011  228s
+  [session] fold 3 loss 0.013  301s
+  [session] fold 4 loss 0.010  374s
+  [session] fold 5 loss 0.012  448s
+fu_s1_steps3000_s1 session  macro-F1=0.7930 quality=63.4/80 F1 Rest/Stress/Act=[0.828 0.628 0.922]
+  confusion (rows = true Rest/Stress/Activity):
+[[4916  572  559]
+ [ 344  826   27]
+ [ 565   34 7047]]
+params 74451
+ALLDONE

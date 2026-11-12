@@ -1,0 +1,26 @@
+Tesla V100-PCIE-32GB
+model=trans features=175 sessions=85 device=cuda
+  [subject] fold 0 loss 0.035  37s
+  [subject] fold 1 loss 0.031  74s
+  [subject] fold 2 loss 0.028  111s
+  [subject] fold 3 loss 0.023  148s
+  [subject] fold 4 loss 0.023  185s
+  [subject] fold 5 loss 0.028  222s
+trans subject  macro-F1=0.7490 quality=59.9/80 F1 Rest/Stress/Act=[0.797 0.54  0.909]
+  confusion (rows = true Rest/Stress/Activity):
+[[4801  645  601]
+ [ 488  703    6]
+ [ 707   57 6882]]
+  [session] fold 0 loss 0.019  36s
+  [session] fold 1 loss 0.042  72s
+  [session] fold 2 loss 0.023  109s
+  [session] fold 3 loss 0.066  145s
+  [session] fold 4 loss 0.028  181s
+  [session] fold 5 loss 0.029  218s
+trans session  macro-F1=0.7662 quality=61.3/80 F1 Rest/Stress/Act=[0.807 0.577 0.915]
+  confusion (rows = true Rest/Stress/Activity):
+[[4805  578  664]
+ [ 457  727   13]
+ [ 603   20 7023]]
+params 65859
+ALLDONE

@@ -1,0 +1,30 @@
+Model name:                              Intel(R) Xeon(R) Gold 6230 CPU @ 2.10GHz
+== /scratch/work/zhangx29/huawei_tech_arena_2026/runs/v2_tcn3000/submission_v2_tcn3000.zip
+zip 0.28 MB  files ['adm_model.py', 'adm_model.onnx']
+sessions 85  rows/session median 122486 max 201305
+run() time per session: mean 40.5 ms  median 40.7  max 66.8
+quality (on training sessions): macro-F1 0.9844 -> 78.8/80   F1 [0.989 0.967 0.997]
+speed score if MET = mean session time: 17.30/20
+speed score if MET = slowest session:   15.55/20
+== /scratch/work/zhangx29/huawei_tech_arena_2026/runs/v2b_tcn3000/submission_v2b_tcn3000.zip
+zip 0.29 MB  files ['adm_model.py', 'adm_model.onnx']
+sessions 85  rows/session median 122486 max 201305
+run() time per session: mean 31.9 ms  median 32.2  max 52.1
+quality (on training sessions): macro-F1 0.9844 -> 78.8/80   F1 [0.989 0.967 0.997]
+speed score if MET = mean session time: 17.87/20
+speed score if MET = slowest session:   16.53/20
+== /scratch/work/zhangx29/huawei_tech_arena_2026/runs/v3_pos3000/submission_v3_pos3000.zip
+zip 0.29 MB  files ['adm_model.py', 'adm_model.onnx']
+sessions 85  rows/session median 122486 max 201305
+run() time per session: mean 32.3 ms  median 32.6  max 51.8
+quality (on training sessions): macro-F1 0.9856 -> 78.8/80   F1 [0.991 0.968 0.998]
+speed score if MET = mean session time: 17.84/20
+speed score if MET = slowest session:   16.54/20
+== /scratch/work/zhangx29/huawei_tech_arena_2026/runs/v3_pos3000_ens3/submission_v3_pos3000_ens3.zip
+zip 0.84 MB  files ['adm_model.py', 'adm_model.onnx']
+sessions 85  rows/session median 122486 max 201305
+run() time per session: mean 42.1 ms  median 43.2  max 69.1
+quality (on training sessions): macro-F1 0.9871 -> 79.0/80   F1 [0.992 0.971 0.998]
+speed score if MET = mean session time: 17.19/20
+speed score if MET = slowest session:   15.39/20
+ALLDONE

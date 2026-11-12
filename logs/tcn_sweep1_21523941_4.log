@@ -1,0 +1,26 @@
+variant: --drop 0.4 --tag tcnA_drop0.4
+model=tcn features=175 sessions=85 device=cuda
+  [subject] fold 0 loss 0.030  32s
+  [subject] fold 1 loss 0.037  62s
+  [subject] fold 2 loss 0.047  93s
+  [subject] fold 3 loss 0.037  123s
+  [subject] fold 4 loss 0.028  154s
+  [subject] fold 5 loss 0.056  185s
+tcnA_drop0.4 subject  macro-F1=0.7656 quality=61.3/80 F1 Rest/Stress/Act=[0.804 0.586 0.906]
+  confusion (rows = true Rest/Stress/Activity):
+[[4784  718  545]
+ [ 327  831   39]
+ [ 737   89 6820]]
+  [session] fold 0 loss 0.039  29s
+  [session] fold 1 loss 0.037  58s
+  [session] fold 2 loss 0.042  88s
+  [session] fold 3 loss 0.073  116s
+  [session] fold 4 loss 0.041  146s
+  [session] fold 5 loss 0.040  176s
+tcnA_drop0.4 session  macro-F1=0.7766 quality=62.1/80 F1 Rest/Stress/Act=[0.814 0.601 0.915]
+  confusion (rows = true Rest/Stress/Activity):
+[[4784  671  592]
+ [ 324  833   40]
+ [ 595   73 6978]]
+params 74451
+ALLDONE

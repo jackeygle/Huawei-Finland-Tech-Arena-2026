@@ -1,0 +1,26 @@
+variant: --steps 750 --tag tcnA_steps750
+model=tcn features=175 sessions=85 device=cuda
+  [subject] fold 0 loss 0.082  21s
+  [subject] fold 1 loss 0.122  41s
+  [subject] fold 2 loss 0.100  60s
+  [subject] fold 3 loss 0.054  80s
+  [subject] fold 4 loss 0.147  99s
+  [subject] fold 5 loss 0.133  118s
+tcnA_steps750 subject  macro-F1=0.7611 quality=60.9/80 F1 Rest/Stress/Act=[0.799 0.578 0.906]
+  confusion (rows = true Rest/Stress/Activity):
+[[4722  775  550]
+ [ 320  834   43]
+ [ 738   78 6830]]
+  [session] fold 0 loss 0.059  19s
+  [session] fold 1 loss 0.103  38s
+  [session] fold 2 loss 0.038  57s
+  [session] fold 3 loss 0.043  75s
+  [session] fold 4 loss 0.068  94s
+  [session] fold 5 loss 0.052  113s
+tcnA_steps750 session  macro-F1=0.7690 quality=61.5/80 F1 Rest/Stress/Act=[0.801 0.597 0.91 ]
+  confusion (rows = true Rest/Stress/Activity):
+[[4675  784  588]
+ [ 283  872   42]
+ [ 674   69 6903]]
+params 74451
+ALLDONE

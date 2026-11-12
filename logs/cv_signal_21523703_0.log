@@ -1,0 +1,25 @@
+##### local,rel,sess
+features: 135 (local,rel,sess)  rows: 159264  scored: 147311
+  [subject] fold 0 done 20s
+  [subject] fold 1 done 39s
+  [subject] fold 2 done 59s
+  [subject] fold 3 done 79s
+  [subject] fold 4 done 99s
+  [subject] fold 5 done 118s
+subject  smooth=  0s  macro-F1=0.6907  quality=55.3/80  F1 Rest/Stress/Act=[0.785 0.417 0.87 ]
+  confusion (rows = true Rest/Stress/Activity):
+[[4848  255  944]
+ [ 637  408  152]
+ [ 822   95 6729]]
+  [session] fold 0 done 20s
+  [session] fold 1 done 39s
+  [session] fold 2 done 59s
+  [session] fold 3 done 79s
+  [session] fold 4 done 99s
+  [session] fold 5 done 118s
+session  smooth=  0s  macro-F1=0.7025  quality=56.2/80  F1 Rest/Stress/Act=[0.794 0.428 0.886]
+  confusion (rows = true Rest/Stress/Activity):
+[[4897  271  879]
+ [ 686  422   89]
+ [ 708   84 6854]]
+ALLDONE

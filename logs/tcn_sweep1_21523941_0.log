@@ -1,0 +1,26 @@
+variant: --tag tcnA_anchor
+model=tcn features=175 sessions=85 device=cuda
+  [subject] fold 0 loss 0.021  39s
+  [subject] fold 1 loss 0.027  79s
+  [subject] fold 2 loss 0.034  121s
+  [subject] fold 3 loss 0.024  164s
+  [subject] fold 4 loss 0.016  208s
+  [subject] fold 5 loss 0.034  252s
+tcnA_anchor subject  macro-F1=0.7676 quality=61.4/80 F1 Rest/Stress/Act=[0.809 0.587 0.906]
+  confusion (rows = true Rest/Stress/Activity):
+[[4880  651  516]
+ [ 359  800   38]
+ [ 771   78 6797]]
+  [session] fold 0 loss 0.030  43s
+  [session] fold 1 loss 0.024  85s
+  [session] fold 2 loss 0.026  127s
+  [session] fold 3 loss 0.046  168s
+  [session] fold 4 loss 0.030  207s
+  [session] fold 5 loss 0.021  246s
+tcnA_anchor session  macro-F1=0.7782 quality=62.3/80 F1 Rest/Stress/Act=[0.816 0.603 0.915]
+  confusion (rows = true Rest/Stress/Activity):
+[[4800  610  637]
+ [ 348  802   47]
+ [ 570   49 7027]]
+params 74451
+ALLDONE

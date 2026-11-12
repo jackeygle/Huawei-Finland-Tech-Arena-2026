@@ -1,0 +1,26 @@
+variant: --groups local,hrv,spec --tag fu_min seed 2
+model=tcn features=126 sessions=85 device=cuda
+  [subject] fold 0 loss 0.042  32s
+  [subject] fold 1 loss 0.035  62s
+  [subject] fold 2 loss 0.043  90s
+  [subject] fold 3 loss 0.057  117s
+  [subject] fold 4 loss 0.057  145s
+  [subject] fold 5 loss 0.066  171s
+fu_s2_min_s2 subject  macro-F1=0.7590 quality=60.7/80 F1 Rest/Stress/Act=[0.806 0.558 0.913]
+  confusion (rows = true Rest/Stress/Activity):
+[[4741  619  687]
+ [ 421  725   51]
+ [ 549   58 7039]]
+  [session] fold 0 loss 0.088  27s
+  [session] fold 1 loss 0.078  54s
+  [session] fold 2 loss 0.028  82s
+  [session] fold 3 loss 0.062  110s
+  [session] fold 4 loss 0.035  140s
+  [session] fold 5 loss 0.028  168s
+fu_s2_min_s2 session  macro-F1=0.7449 quality=59.6/80 F1 Rest/Stress/Act=[0.789 0.546 0.9  ]
+  confusion (rows = true Rest/Stress/Activity):
+[[4669  713  665]
+ [ 402  749   46]
+ [ 719   87 6840]]
+params 72099
+ALLDONE

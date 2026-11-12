@@ -1,0 +1,4 @@
+u4_s1 [subject] {}                               argmax 0.7806 | decoded macro-F1 0.9178 F1 [0.941 0.832 0.98 ]
+u4_s1 [subject] {'u_emit': True}                 argmax 0.7806 | decoded macro-F1 0.9294 F1 [0.951 0.854 0.984]
+u4_s1 [session] {}                               argmax 0.7891 | decoded macro-F1 0.9250 F1 [0.948 0.843 0.984]
+u4_s1 [session] {'u_emit': True}                 argmax 0.7891 | decoded macro-F1 0.9265 F1 [0.95  0.845 0.984]

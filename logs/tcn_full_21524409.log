@@ -1,0 +1,7 @@
+seed 0: final loss 0.035  44s
+  torch.onnx.export(ens, (x0,), os.path.join(out, "model.onnx"), input_names=["x"], output_names=["prob"],
+exported /scratch/work/zhangx29/huawei_tech_arena_2026/runs/v2_tcn/model.onnx  params 74451
+seed 0: final loss 0.022  82s
+  torch.onnx.export(ens, (x0,), os.path.join(out, "model.onnx"), input_names=["x"], output_names=["prob"],
+exported /scratch/work/zhangx29/huawei_tech_arena_2026/runs/v2_tcn3000/model.onnx  params 74451
+ALLDONE

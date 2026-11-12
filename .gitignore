@@ -1,49 +1,9 @@
-# Local Python environments and caches
-.venv/
-env313/
-.pipcache/
-__pycache__/
-*.py[cod]
-.pytest_cache/
-
-# Local downloads: keep the small official interface and documentation
-/downloads/*
-!/downloads/adm_base_class.py
-!/downloads/requirements.txt
-!/downloads/README.txt
-!/downloads/LICENSE.txt
-!/downloads/data_constraints.txt
-!/downloads/phases_to_activity.txt
-
-# Downloaded third-party checkout and captured web pages
-/external/
-/raw_page/
-
-# Generated logs, predictions, figures, datasets and model artifacts
-logs/
-oof/
-*.log
-*.npz
-*.npy
-*.parquet
-*.onnx
-*.onnx.data
-*.pt
-*.pth
-*.pkl
-*.joblib
-*.zip
-*.csv
-*.png
-*.pdf
-/analysis/**/*.json
-/runs/**/*.json
-
-# Local credentials and editor state
+# Repository metadata and local authentication material
+.git/
 .env
 .env.*
-*.pem
-*.key
-.vscode/
-.idea/
-.DS_Store
+.netrc
+.pypirc
+id_rsa
+id_ed25519
+id_ecdsa

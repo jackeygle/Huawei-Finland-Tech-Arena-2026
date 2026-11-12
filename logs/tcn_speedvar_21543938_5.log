@@ -1,0 +1,26 @@
+variant: --ch 32 --tag spd_ch32_s2 seed 2
+model=tcn features=175 sessions=85 device=cuda
+  [subject] fold 0 loss 0.031  65s
+  [subject] fold 1 loss 0.026  134s
+  [subject] fold 2 loss 0.021  201s
+  [subject] fold 3 loss 0.016  273s
+  [subject] fold 4 loss 0.017  339s
+  [subject] fold 5 loss 0.025  407s
+spd_ch32_s2 subject  macro-F1=0.7716 quality=61.7/80 F1 Rest/Stress/Act=[0.817 0.587 0.911]
+  confusion (rows = true Rest/Stress/Activity):
+[[4934  611  502]
+ [ 374  781   42]
+ [ 725   72 6849]]
+  [session] fold 0 loss 0.016  70s
+  [session] fold 1 loss 0.014  138s
+  [session] fold 2 loss 0.052  205s
+  [session] fold 3 loss 0.017  271s
+  [session] fold 4 loss 0.028  342s
+  [session] fold 5 loss 0.031  409s
+spd_ch32_s2 session  macro-F1=0.7840 quality=62.7/80 F1 Rest/Stress/Act=[0.819 0.619 0.914]
+  confusion (rows = true Rest/Stress/Activity):
+[[4905  583  559]
+ [ 356  824   17]
+ [ 669   58 6919]]
+params 35299
+ALLDONE

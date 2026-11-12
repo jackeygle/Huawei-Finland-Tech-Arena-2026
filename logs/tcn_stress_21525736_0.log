@@ -1,0 +1,17 @@
+variant: stress-only training seed 0
+model=tcn features=175 sessions=85 device=cuda
+  [subject] fold 0 loss 0.003  69s
+  [subject] fold 1 loss 0.004  134s
+  [subject] fold 2 loss 0.003  192s
+  [subject] fold 3 loss 0.002  250s
+  [subject] fold 4 loss 0.003  308s
+  [subject] fold 5 loss 0.005  366s
+stressonly_s0 subject  macro-F1=0.3023 quality=24.2/80 F1 Rest/Stress/Act=[0.625 0.282 0.   ]
+  confusion (rows = true Rest/Stress/Activity):
+[[5391  656    0]
+ [ 508  689    0]
+ [5296 2350    0]]
+  [session] fold 0 loss 0.004  67s
+  [session] fold 1 loss 0.003  131s
+  [session] fold 2 loss 0.004  198s
+[2026-11-11T16:37:25.087] error: *** JOB 21526081 ON dgx2 CANCELLED AT 2026-11-11T16:37:25 DUE to SIGNAL Terminated ***

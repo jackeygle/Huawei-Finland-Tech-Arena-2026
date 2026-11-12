@@ -1,0 +1,82 @@
+Huawei Tech Arena - 2026 Finland Tech Arena
+Platform
+Home
+Explore
+helpHelp and supportHelp and support
+My account
+Create an account
+Log in
+menuHuawei Tech Arena
+Explore
+Create an account
+Log in
+2026 Finland Tech Arena
+AI in Health
+group
+Teams of
+1 - 5 people
+shareShareShare on facebook [https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhuawei.agorize.com%2Fen%2Fchallenges%2F2026-finland-tech-arena%2Fpages%2Ftopic-description%3Flang%3Den]
+Share on twitter [https://twitter.com/intent/tweet?text=I+have+applied+to+2026+Finland+Tech+Arena+powered+by+%40agorize%21 https%3A%2F%2Fhuawei.agorize.com%2Fen%2Fchallenges%2F2026-finland-tech-arena%2Fpages%2Ftopic-description%3Flang%3Den]
+Share on linkedin [https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fhuawei.agorize.com%2Fen%2Fchallenges%2F2026-finland-tech-arena%2Fpages%2Ftopic-description%3Flang%3Den&name=2026+Finland+Tech+Arena&summary=I+have+applied+to+2026+Finland+Tech+Arena+powered+by+Agorize%21+Find+out+more%3A+https%253A%252F%252Fhuawei.agorize.com%252Fen%252Fchallenges%252F2026-finland-tech-arena%252Fpages%252Ftopic-description%253Flang%253Den%27]
+account_boxShare on mail
+shareShareShare on facebook [https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhuawei.agorize.com%2Fen%2Fchallenges%2F2026-finland-tech-arena%2Fpages%2Ftopic-description%3Flang%3Den]
+Share on twitter [https://twitter.com/intent/tweet?text=I+have+applied+to+2026+Finland+Tech+Arena+powered+by+%40agorize%21 https%3A%2F%2Fhuawei.agorize.com%2Fen%2Fchallenges%2F2026-finland-tech-arena%2Fpages%2Ftopic-description%3Flang%3Den]
+Share on linkedin [https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fhuawei.agorize.com%2Fen%2Fchallenges%2F2026-finland-tech-arena%2Fpages%2Ftopic-description%3Flang%3Den&name=2026+Finland+Tech+Arena&summary=I+have+applied+to+2026+Finland+Tech+Arena+powered+by+Agorize%21+Find+out+more%3A+https%253A%252F%252Fhuawei.agorize.com%252Fen%252Fchallenges%252F2026-finland-tech-arena%252Fpages%252Ftopic-description%253Flang%253Den%27]
+account_boxShare on mail
+2026 Finland Tech Arena
+Participate
+Brief
+How it Works
+Topic Description
+About Huawei
+FAQs
+Leaderboard
+Discussion
+Terms & Conditions
+TOPIC TITLE DESCRIPTION
+Access to Example Code, Sample Data, and Proposal Template [https://drive.google.com/drive/folders/19l8IhyWxDi9H8tjYk4AjAznlcrXvDQnG]
+Stress or Sweat? Decoding the Body's Signals from the Wrist
+A racing heart can mean a stressful meeting, a hard sprint, or a steady jog, and today's wearables often can't tell the difference. Using only heart (PPG/IBI), skin conductance (EDA), and skin-temperature signals, with no motion data, build a model that classifies a person's state as rest/recovery, acute stress, or physical activity. Solve a real health-tech problem, and top teams pitch to Huawei experts at the final in Helsinki.
+The goal of this challenge is to build a model that classifies a person's physiological state as rest/recovery, acute stress, or physical activity using only wrist-worn PPG/BVP/IBI, EDA, and skin-temperature signals, without any motion or activity data.
+Requirements
+Your model should be trained and be compatible with the following versions of dependencies:
+Python 3.13
+The packages and versions listed in requirements.txt, provided in the dataset zip.
+All deliverables must be in Python.
+Only 1 CPU core is used and multi-threading is disabled when the submission runs.
+The submission can use at most 4 GB of RAM, and the .zip file must be at most 50 MB.
+Dataset
+Training dataset is provided as one zip file, which contains the data and documentation of the data.
+Model inference
+Model is expected to take a Pandas timeseries DataFrame as an input. The DataFrame will contain following columns: BVP, EDA, HR, IBI_dt, IBI_duration, Temperature
+The model produces a Pandas timeseries DataFrame with column Activity that contains a detected activity from these options: Stress, Activity, Rest
+Model submission
+Create a Python file exposing get_model() that returns a class implementing ADM_Base base class as defined in adm_base_class.py. The trained model in ONNX format must also be uploaded next to the source file, using the same basename and .onnx extension.
+Example (your_model.py):
+import pathlib
+import onnxruntime as ort
+import pandas as pd
+class YourModel:
+def load_model(self, onnx_file: pathlib.Path) -> None:
+self.session = ort.InferenceSession(onnx_file, providers=["CPUExecutionProvider"])
+def run(self, input: pd.DataFrame) -> pd.DataFrame:
+features = ...  # one row of model inputs per input timestamp
+labels = self.session.run(None, {"input": features})[0]
+return pd.DataFrame({"Activity": labels}, index=input.index)
+def get_model():
+model = YourModel()
+model.load_model(pathlib.Path(__file__).with_suffix(".onnx"))
+return model
+These two files should be uploaded in one .zip file. Each team may submit up to 3 times per day. The best valid submission counts for the ranking.
+Model evaluation
+The model is evaluated against an evaluation data set containing different activities.
+Predictions are compared with the true states over 10-second windows, using the most frequent state in each window.
+The model quality score is based on macro-F1 score, which is an average of F1 scores of Stress, Activity, and Rest states. The final quality score is macro-F1 * 80 producing a score in range 0-80.
+The model speed score is based on mean execution time (MET) of 50 runs of the run() function of ADM_Base(). The final speed score is (1 - MET / 0.3s) * 20.0 producing a score in range 0-20 (MET > 0.3s produces 0 points).
+The final score is: quality score (0, 80) + time score (0, 20) = total (0, 100)
+Participate
+Sitemap
+Terms of use
+Privacy policy
+Cookie settings
+Huawei Tech Arena - Powered by Agorize [https://get.agorize.com?utm_medium=brand&utm_source=huawei.agorize.com&utm_campaign=footer]

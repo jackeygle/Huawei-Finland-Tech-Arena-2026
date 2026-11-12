@@ -1,0 +1,11 @@
+{
+ "name": "v1",
+ "iters": 200,
+ "lr": 0.1,
+ "leaves": 15,
+ "seed": 0,
+ "n_features": 135,
+ "n_train": 147311,
+ "onnx_agreement": 1.0,
+ "onnx_max_prob_diff": 2.4077472693395663e-07
+}

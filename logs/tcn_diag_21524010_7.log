@@ -1,0 +1,26 @@
+variant: --exclude_train AEROBIC/S15,AEROBIC/S16 --tag diag_excl_S15S16
+model=tcn features=175 sessions=85 device=cuda
+  [subject] fold 0 loss 0.023  39s
+  [subject] fold 1 loss 0.033  81s
+  [subject] fold 2 loss 0.031  122s
+  [subject] fold 3 loss 0.029  162s
+  [subject] fold 4 loss 0.025  202s
+  [subject] fold 5 loss 0.044  241s
+diag_excl_S15S16 subject  macro-F1=0.7692 quality=61.5/80 F1 Rest/Stress/Act=[0.811 0.596 0.901]
+  confusion (rows = true Rest/Stress/Activity):
+[[4997  572  478]
+ [ 386  782   29]
+ [ 893   73 6680]]
+  [session] fold 0 loss 0.055  40s
+  [session] fold 1 loss 0.031  80s
+  [session] fold 2 loss 0.021  120s
+  [session] fold 3 loss 0.027  161s
+  [session] fold 4 loss 0.019  202s
+  [session] fold 5 loss 0.024  242s
+diag_excl_S15S16 session  macro-F1=0.7766 quality=62.1/80 F1 Rest/Stress/Act=[0.817 0.602 0.911]
+  confusion (rows = true Rest/Stress/Activity):
+[[4921  570  556]
+ [ 385  786   26]
+ [ 697   60 6889]]
+params 74451
+ALLDONE

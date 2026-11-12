@@ -1,0 +1,46 @@
+model=tcn features=175 sessions=85 device=cuda
+  [subject] fold 0 loss 0.328  5s
+  [subject] fold 1 loss 0.353  6s
+  [subject] fold 2 loss 0.369  8s
+  [subject] fold 3 loss 0.295  9s
+  [subject] fold 4 loss 0.380  11s
+  [subject] fold 5 loss 0.472  12s
+smoke3 subject  macro-F1=0.6664 quality=53.3/80 F1 Rest/Stress/Act=[0.637 0.477 0.885]
+  confusion (rows = true Rest/Stress/Activity):
+[[3114 1808 1125]
+ [ 159 1007   31]
+ [ 452  210 6984]]
+params 74451
+model=tcn features=175 sessions=85 device=cuda
+  [subject] fold 0 loss 0.885  4s
+  [subject] fold 1 loss 0.652  6s
+  [subject] fold 2 loss 0.684  7s
+  [subject] fold 3 loss 1.375  9s
+  [subject] fold 4 loss 0.702  10s
+  [subject] fold 5 loss 0.628  12s
+smoke4 subject  macro-F1=0.6774 quality=54.2/80 F1 Rest/Stress/Act=[0.676 0.478 0.879]
+  confusion (rows = true Rest/Stress/Activity):
+[[3420 1584 1043]
+ [ 187  979   31]
+ [ 471  338 6837]]
+params 74500
+model=tcn features=175 sessions=85 device=cuda
+  [subject] fold 0 loss 1.133  4s
+  [subject] fold 1 loss 1.175  6s
+  [subject] fold 2 loss 1.100  7s
+  [subject] fold 3 loss 1.683  9s
+  [subject] fold 4 loss 1.409  11s
+  [subject] fold 5 loss 1.036  12s
+smoke4b subject  macro-F1=0.6754 quality=54.0/80 F1 Rest/Stress/Act=[0.669 0.477 0.881]
+  confusion (rows = true Rest/Stress/Activity):
+[[3332 1598 1117]
+ [ 190  981   26]
+ [ 392  340 6914]]
+params 74549
+smoke3 (159264, 3) [[0.494 0.47  0.036]
+ [0.501 0.473 0.027]]
+smoke4 (159264, 4) [[0.235 0.521 0.024 0.22 ]
+ [0.252 0.548 0.019 0.182]]
+smoke4b (159264, 5) [[0.182 0.502 0.039 0.276 0.579]
+ [0.178 0.557 0.032 0.233 0.58 ]]
+ALLDONE

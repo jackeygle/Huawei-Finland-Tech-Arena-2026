@@ -1,0 +1,9 @@
+step 500 loss 0.613  10s
+step 1000 loss 0.980  19s
+step 1500 loss 0.216  28s
+step 2000 loss 0.372  37s
+step 2500 loss 0.241  46s
+step 3000 loss 0.319  55s
+  torch.onnx.export(exp, (x0,), os.path.join(out_dir, "model.onnx"), input_names=["x"], output_names=["prob"],
+exported /scratch/work/zhangx29/huawei_tech_arena_2026/runs/v8_p10_model/model.onnx  params 46423  output (1, 7, T)
+ALLDONE

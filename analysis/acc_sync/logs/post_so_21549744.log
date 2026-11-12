@@ -1,0 +1,14 @@
+subject split, 3-seed means
+u4b    {'beta': 0.05, 'u_emit': True}                       macro-F1 0.9340 stressF1 0.867 n=3
+u4so   {'beta': 0.0, 'u_emit': True, 'beta_so': 0.02}       macro-F1 0.9313 stressF1 0.859 n=3
+u4so   {'beta': 0.0, 'u_emit': True, 'beta_so': 0.05}       macro-F1 0.9319 stressF1 0.861 n=3
+u4so   {'beta': 0.0, 'u_emit': True, 'beta_so': 0.1}        macro-F1 0.9343 stressF1 0.866 n=3
+u4so   {'beta': 0.0, 'u_emit': True, 'beta_so': 0.2}        macro-F1 0.9346 stressF1 0.867 n=3
+u4so   {'beta': 0.05, 'u_emit': True, 'beta_so': 0.02}      macro-F1 0.9333 stressF1 0.863 n=3
+u4so   {'beta': 0.05, 'u_emit': True, 'beta_so': 0.05}      macro-F1 0.9352 stressF1 0.868 n=3
+u4so   {'beta': 0.05, 'u_emit': True, 'beta_so': 0.1}       macro-F1 0.9365 stressF1 0.871 n=3
+u4so   {'beta': 0.05, 'u_emit': True, 'beta_so': 0.2}       macro-F1 0.9277 stressF1 0.861 n=3
+u4so   {'beta': 0.05, 'u_emit': True}                       macro-F1 0.9330 stressF1 0.862 n=3
+u4so   {'u_emit': True}                                     macro-F1 0.9270 stressF1 0.848 n=3
+u4so   {}                                                   macro-F1 0.9220 stressF1 0.839 n=3
+ALLDONE

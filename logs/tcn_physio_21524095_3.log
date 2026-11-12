@@ -1,0 +1,26 @@
+variant: +pulse seed 0
+model=tcn features=179 sessions=85 device=cuda
+  [subject] fold 0 loss 0.015  38s
+  [subject] fold 1 loss 0.025  78s
+  [subject] fold 2 loss 0.028  116s
+  [subject] fold 3 loss 0.019  157s
+  [subject] fold 4 loss 0.019  201s
+  [subject] fold 5 loss 0.061  245s
+phys_pulse_s0 subject  macro-F1=0.7726 quality=61.8/80 F1 Rest/Stress/Act=[0.811 0.604 0.903]
+  confusion (rows = true Rest/Stress/Activity):
+[[4934  628  485]
+ [ 337  822   38]
+ [ 852   74 6720]]
+  [session] fold 0 loss 0.028  43s
+  [session] fold 1 loss 0.033  86s
+  [session] fold 2 loss 0.038  128s
+  [session] fold 3 loss 0.100  169s
+  [session] fold 4 loss 0.024  211s
+  [session] fold 5 loss 0.023  252s
+phys_pulse_s0 session  macro-F1=0.7784 quality=62.3/80 F1 Rest/Stress/Act=[0.808 0.62  0.907]
+  confusion (rows = true Rest/Stress/Activity):
+[[4783  644  620]
+ [ 310  852   35]
+ [ 698   56 6892]]
+params 74643
+ALLDONE

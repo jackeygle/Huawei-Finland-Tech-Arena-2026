@@ -1,0 +1,26 @@
+variant: --seed 1 --tag tcnA_seed1
+model=tcn features=175 sessions=85 device=cuda
+  [subject] fold 0 loss 0.027  38s
+  [subject] fold 1 loss 0.022  79s
+  [subject] fold 2 loss 0.031  120s
+  [subject] fold 3 loss 0.046  161s
+  [subject] fold 4 loss 0.036  201s
+  [subject] fold 5 loss 0.035  243s
+tcnA_seed1 subject  macro-F1=0.7732 quality=61.9/80 F1 Rest/Stress/Act=[0.817 0.597 0.905]
+  confusion (rows = true Rest/Stress/Activity):
+[[4986  596  465]
+ [ 351  803   43]
+ [ 816   93 6737]]
+  [session] fold 0 loss 0.029  42s
+  [session] fold 1 loss 0.030  82s
+  [session] fold 2 loss 0.049  126s
+  [session] fold 3 loss 0.045  175s
+  [session] fold 4 loss 0.041  224s
+  [session] fold 5 loss 0.015  271s
+tcnA_seed1 session  macro-F1=0.7789 quality=62.3/80 F1 Rest/Stress/Act=[0.815 0.606 0.916]
+  confusion (rows = true Rest/Stress/Activity):
+[[4814  695  538]
+ [ 317  856   24]
+ [ 637   77 6932]]
+params 74451
+ALLDONE

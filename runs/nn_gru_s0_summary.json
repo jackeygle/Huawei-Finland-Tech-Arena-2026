@@ -1,0 +1,41 @@
+{
+ "subject": {
+  "macro_f1": 0.7436978884661709,
+  "f1": [
+   0.7964121132323897,
+   0.534209509083881,
+   0.9004720430822418
+  ]
+ },
+ "session": {
+  "macro_f1": 0.7658482471926789,
+  "f1": [
+   0.8082477669254529,
+   0.5768357305071915,
+   0.9124612441453922
+  ]
+ },
+ "params": 39459,
+ "args": {
+  "model": "gru",
+  "dils": "1,2,4,8,16,32,64",
+  "split": "subject,session",
+  "folds": 6,
+  "seed": 0,
+  "fold_seed": 0,
+  "ch": 48,
+  "drop": 0.2,
+  "steps": 3000,
+  "batch": 16,
+  "crop": 900,
+  "lr": 0.002,
+  "wd": 0.01,
+  "featdrop": 0.1,
+  "tag": "gru_s0",
+  "groups": "local,rel,sess,eda2,hrv,spec",
+  "eval_every": 0,
+  "exclude_train": "",
+  "boundary_ignore": 0,
+  "train_prot": ""
+ }
+}

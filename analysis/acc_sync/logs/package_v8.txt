@@ -1,0 +1,4 @@
+live features vs training features (session 70): max abs diff 0.00e+00  shape (3146, 175)
+ONNX output (1, 7, 3146); vs torch max abs diff 9.54e-07
+templates: {'AEROBIC/V1': 4, 'AEROBIC/V2': 5, 'ANAEROBIC/V1': 4, 'ANAEROBIC/V2': 5, 'STRESS/V1': 15, 'STRESS/V2': 12} | version by date: True
+/scratch/work/zhangx29/huawei_tech_arena_2026/runs/v8_p10/submission_v8_p10.zip  0.19 MB

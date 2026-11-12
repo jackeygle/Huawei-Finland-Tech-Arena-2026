@@ -1,0 +1,26 @@
+variant: --boundary_ignore 15 --tag diag_bound15
+model=tcn features=175 sessions=85 device=cuda
+  [subject] fold 0 loss 0.005  33s
+  [subject] fold 1 loss 0.009  68s
+  [subject] fold 2 loss 0.018  102s
+  [subject] fold 3 loss 0.010  137s
+  [subject] fold 4 loss 0.006  172s
+  [subject] fold 5 loss 0.015  207s
+diag_bound15 subject  macro-F1=0.7644 quality=61.2/80 F1 Rest/Stress/Act=[0.814 0.573 0.907]
+  confusion (rows = true Rest/Stress/Activity):
+[[4934  595  518]
+ [ 395  754   48]
+ [ 753   85 6808]]
+  [session] fold 0 loss 0.014  36s
+  [session] fold 1 loss 0.006  70s
+  [session] fold 2 loss 0.010  105s
+  [session] fold 3 loss 0.033  139s
+  [session] fold 4 loss 0.015  176s
+  [session] fold 5 loss 0.008  210s
+diag_bound15 session  macro-F1=0.7789 quality=62.3/80 F1 Rest/Stress/Act=[0.82  0.602 0.915]
+  confusion (rows = true Rest/Stress/Activity):
+[[4855  554  638]
+ [ 377  784   36]
+ [ 566   68 7012]]
+params 74451
+ALLDONE

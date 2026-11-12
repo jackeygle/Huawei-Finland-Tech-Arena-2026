@@ -1,0 +1,15 @@
+args: --u_class 1 --bnd 3 --split session --seed 2 --tag u4so_s2
+model=tcn features=175 sessions=85 device=cuda
+  [session] fold 0 loss 0.116  66s
+  [session] fold 1 loss 0.102  139s
+  [session] fold 2 loss 0.115  211s
+  [session] fold 3 loss 0.135  287s
+  [session] fold 4 loss 0.064  359s
+  [session] fold 5 loss 0.113  433s
+u4so_s2 session  macro-F1=0.7939 quality=63.5/80 F1 Rest/Stress/Act=[0.836 0.622 0.923]
+  confusion (rows = true Rest/Stress/Activity):
+[[5059  481  507]
+ [ 399  769   29]
+ [ 603   24 7019]]
+params 74647
+ALLDONE

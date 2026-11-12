@@ -1,0 +1,26 @@
+args: --model tcn --dils 1,2,4,8,16,32,64,128,256 --crop 1800 --steps 3000 --seed 0 --tag bigrf_s0
+model=tcn features=175 sessions=85 device=cuda
+  [subject] fold 0 loss 0.005  113s
+  [subject] fold 1 loss 0.006  220s
+  [subject] fold 2 loss 0.006  327s
+  [subject] fold 3 loss 0.004  439s
+  [subject] fold 4 loss 0.008  551s
+  [subject] fold 5 loss 0.008  660s
+bigrf_s0 subject  macro-F1=0.8111 quality=64.9/80 F1 Rest/Stress/Act=[0.863 0.639 0.932]
+  confusion (rows = true Rest/Stress/Activity):
+[[5332  316  399]
+ [ 436  738   23]
+ [ 546   60 7040]]
+  [session] fold 0 loss 0.005  108s
+  [session] fold 1 loss 0.004  237s
+  [session] fold 2 loss 0.004  348s
+  [session] fold 3 loss 0.004  479s
+  [session] fold 4 loss 0.004  590s
+  [session] fold 5 loss 0.005  721s
+bigrf_s0 session  macro-F1=0.8193 quality=65.5/80 F1 Rest/Stress/Act=[0.872 0.641 0.945]
+  confusion (rows = true Rest/Stress/Activity):
+[[5258  321  468]
+ [ 439  727   31]
+ [ 318   25 7303]]
+params 93267
+ALLDONE

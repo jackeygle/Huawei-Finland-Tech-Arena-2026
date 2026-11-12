@@ -1,0 +1,39 @@
+{
+ "subject": {
+  "macro_f1": 0.77257193679275,
+  "f1": [
+   0.8108463434675431,
+   0.6041896361631753,
+   0.9026798307475318
+  ]
+ },
+ "session": {
+  "macro_f1": 0.7783991262363825,
+  "f1": [
+   0.8080756884608886,
+   0.6198617679156057,
+   0.9072599223326532
+  ]
+ },
+ "params": 74643,
+ "args": {
+  "model": "tcn",
+  "split": "subject,session",
+  "folds": 6,
+  "seed": 0,
+  "fold_seed": 0,
+  "ch": 48,
+  "drop": 0.2,
+  "steps": 1500,
+  "batch": 16,
+  "crop": 900,
+  "lr": 0.002,
+  "wd": 0.01,
+  "featdrop": 0.1,
+  "tag": "phys_pulse_s0",
+  "groups": "local,rel,sess,eda2,hrv,spec,pulse",
+  "eval_every": 0,
+  "exclude_train": "",
+  "boundary_ignore": 0
+ }
+}

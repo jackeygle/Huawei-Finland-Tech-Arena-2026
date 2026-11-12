@@ -1,0 +1,26 @@
+variant: --groups local,sess,eda2,hrv,spec --tag diag_no_rel
+model=tcn features=151 sessions=85 device=cuda
+  [subject] fold 0 loss 0.029  43s
+  [subject] fold 1 loss 0.044  85s
+  [subject] fold 2 loss 0.041  127s
+  [subject] fold 3 loss 0.049  168s
+  [subject] fold 4 loss 0.029  212s
+  [subject] fold 5 loss 0.055  254s
+diag_no_rel subject  macro-F1=0.7713 quality=61.7/80 F1 Rest/Stress/Act=[0.813 0.591 0.91 ]
+  confusion (rows = true Rest/Stress/Activity):
+[[4921  594  532]
+ [ 402  774   21]
+ [ 739   56 6851]]
+  [session] fold 0 loss 0.025  42s
+  [session] fold 1 loss 0.043  83s
+  [session] fold 2 loss 0.036  125s
+  [session] fold 3 loss 0.080  166s
+  [session] fold 4 loss 0.040  208s
+  [session] fold 5 loss 0.035  250s
+diag_no_rel session  macro-F1=0.7775 quality=62.2/80 F1 Rest/Stress/Act=[0.818 0.584 0.93 ]
+  confusion (rows = true Rest/Stress/Activity):
+[[4773  691  583]
+ [ 396  787   14]
+ [ 458   18 7170]]
+params 73299
+ALLDONE

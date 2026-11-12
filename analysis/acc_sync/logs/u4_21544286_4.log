@@ -1,0 +1,26 @@
+variant: --u_class 1 --bnd 1 --tag u4b_s1 seed 1
+model=tcn features=175 sessions=85 device=cuda
+  [subject] fold 0 loss 0.065  71s
+  [subject] fold 1 loss 0.052  150s
+  [subject] fold 2 loss 0.077  226s
+  [subject] fold 3 loss 0.095  301s
+  [subject] fold 4 loss 0.069  378s
+  [subject] fold 5 loss 0.047  456s
+u4b_s1 subject  macro-F1=0.7670 quality=61.4/80 F1 Rest/Stress/Act=[0.819 0.571 0.911]
+  confusion (rows = true Rest/Stress/Activity):
+[[5009  529  509]
+ [ 444  712   41]
+ [ 729   58 6859]]
+  [session] fold 0 loss 0.094  71s
+  [session] fold 1 loss 0.138  147s
+  [session] fold 2 loss 0.069  220s
+  [session] fold 3 loss 0.078  290s
+  [session] fold 4 loss 0.070  366s
+  [session] fold 5 loss 0.069  441s
+u4b_s1 session  macro-F1=0.7867 quality=62.9/80 F1 Rest/Stress/Act=[0.831 0.613 0.916]
+  confusion (rows = true Rest/Stress/Activity):
+[[5027  466  554]
+ [ 404  770   23]
+ [ 617   80 6949]]
+params 74549
+ALLDONE

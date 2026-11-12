@@ -1,0 +1,24 @@
+{
+ "name": "v2_tcn3000",
+ "model": "tcn",
+ "seeds": "0",
+ "steps": 3000,
+ "batch": 16,
+ "crop": 900,
+ "lr": 0.002,
+ "wd": 0.01,
+ "featdrop": 0.1,
+ "ch": 48,
+ "drop": 0.2,
+ "n_features": 175,
+ "feature_groups": [
+  "local",
+  "rel",
+  "sess",
+  "eda2",
+  "hrv",
+  "spec"
+ ],
+ "params": 74451,
+ "train_seconds": 147311
+}

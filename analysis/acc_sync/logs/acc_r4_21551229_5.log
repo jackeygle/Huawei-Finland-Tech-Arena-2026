@@ -1,0 +1,26 @@
+args: --u_class 1 --bnd 3 --pool 10 --dils 1,2,4,8 --bnd_k 6 --seed 2 --tag p10k6_s2
+model=tcn features=175 sessions=85 device=cuda
+  [subject] fold 0 loss 0.261  63s
+  [subject] fold 1 loss 0.292  131s
+  [subject] fold 2 loss 0.210  203s
+  [subject] fold 3 loss 0.272  275s
+  [subject] fold 4 loss 0.267  341s
+  [subject] fold 5 loss 0.167  407s
+p10k6_s2 subject  macro-F1=0.7813 quality=62.5/80 F1 Rest/Stress/Act=[0.825 0.6   0.919]
+  confusion (rows = true Rest/Stress/Activity):
+[[4950  574  523]
+ [ 376  782   39]
+ [ 620   54 6972]]
+  [session] fold 0 loss 0.326  74s
+  [session] fold 1 loss 0.272  142s
+  [session] fold 2 loss 0.296  206s
+  [session] fold 3 loss 0.402  274s
+  [session] fold 4 loss 0.156  347s
+  [session] fold 5 loss 0.434  413s
+p10k6_s2 session  macro-F1=0.7928 quality=63.4/80 F1 Rest/Stress/Act=[0.831 0.632 0.916]
+  confusion (rows = true Rest/Stress/Activity):
+[[5053  440  554]
+ [ 400  779   18]
+ [ 657   51 6938]]
+params 46423
+ALLDONE

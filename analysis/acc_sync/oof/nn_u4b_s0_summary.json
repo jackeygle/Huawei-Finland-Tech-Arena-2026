@@ -1,0 +1,45 @@
+{
+ "subject": {
+  "macro_f1": 0.7810154393432264,
+  "f1": [
+   0.8278059140663291,
+   0.6009811937857726,
+   0.9142592101775775
+  ]
+ },
+ "session": {
+  "macro_f1": 0.7903944039885035,
+  "f1": [
+   0.8291123678387018,
+   0.6268412438625205,
+   0.9152296002642881
+  ]
+ },
+ "params": 74549,
+ "args": {
+  "model": "tcn",
+  "split": "subject,session",
+  "folds": 6,
+  "seed": 0,
+  "fold_seed": 0,
+  "ch": 48,
+  "drop": 0.2,
+  "steps": 3000,
+  "batch": 16,
+  "crop": 900,
+  "lr": 0.002,
+  "wd": 0.01,
+  "featdrop": 0.1,
+  "tag": "u4b_s0",
+  "u_class": 1,
+  "u_weight": 1.0,
+  "bnd": 1,
+  "bnd_k": 3,
+  "bnd_weight": 1.0,
+  "groups": "local,rel,sess,eda2,hrv,spec",
+  "eval_every": 0,
+  "exclude_train": "",
+  "boundary_ignore": 0,
+  "train_prot": ""
+ }
+}

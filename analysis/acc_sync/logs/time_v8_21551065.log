@@ -1,0 +1,16 @@
+Model name:                              Intel(R) Xeon(R) Gold 6248 CPU @ 2.50GHz
+== /scratch/work/zhangx29/huawei_tech_arena_2026/runs/v8_p10/submission_v8_p10.zip
+zip 0.19 MB  files ['adm_model.py', 'adm_model.onnx']
+sessions 85  rows/session median 122486 max 201305
+run() time per session: mean 20.9 ms  median 21.3  max 34.7
+quality (on training sessions): macro-F1 0.9839 -> 78.7/80   F1 [0.989 0.965 0.997]
+speed score if MET = mean session time: 18.60/20
+speed score if MET = slowest session:   17.68/20
+== /scratch/work/zhangx29/huawei_tech_arena_2026/runs/v7_u4so/submission_v7_u4so.zip
+zip 0.29 MB  files ['adm_model.py', 'adm_model.onnx']
+sessions 85  rows/session median 122486 max 201305
+run() time per session: mean 24.7 ms  median 25.2  max 40.6
+quality (on training sessions): macro-F1 0.9868 -> 78.9/80   F1 [0.991 0.972 0.997]
+speed score if MET = mean session time: 18.35/20
+speed score if MET = slowest session:   17.29/20
+ALLDONE

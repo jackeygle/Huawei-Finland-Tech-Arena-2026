@@ -1,0 +1,26 @@
+variant: --groups local,rel,sess,eda2,spec --tag diag_no_hrv
+model=tcn features=165 sessions=85 device=cuda
+  [subject] fold 0 loss 0.025  34s
+  [subject] fold 1 loss 0.032  68s
+  [subject] fold 2 loss 0.043  102s
+  [subject] fold 3 loss 0.025  139s
+  [subject] fold 4 loss 0.015  175s
+  [subject] fold 5 loss 0.035  212s
+diag_no_hrv subject  macro-F1=0.7613 quality=60.9/80 F1 Rest/Stress/Act=[0.805 0.576 0.903]
+  confusion (rows = true Rest/Stress/Activity):
+[[4877  613  557]
+ [ 399  763   35]
+ [ 789   78 6779]]
+  [session] fold 0 loss 0.033  36s
+  [session] fold 1 loss 0.052  69s
+  [session] fold 2 loss 0.035  105s
+  [session] fold 3 loss 0.079  139s
+  [session] fold 4 loss 0.032  174s
+  [session] fold 5 loss 0.036  207s
+diag_no_hrv session  macro-F1=0.7779 quality=62.2/80 F1 Rest/Stress/Act=[0.812 0.619 0.903]
+  confusion (rows = true Rest/Stress/Activity):
+[[4870  581  596]
+ [ 325  829   43]
+ [ 755   72 6819]]
+params 73971
+ALLDONE

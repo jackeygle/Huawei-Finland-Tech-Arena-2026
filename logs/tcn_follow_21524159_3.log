@@ -1,0 +1,26 @@
+variant: --groups local,eda2,hrv,spec --tag fu_nosess seed 0
+model=tcn features=135 sessions=85 device=cuda
+  [subject] fold 0 loss 0.026  36s
+  [subject] fold 1 loss 0.035  65s
+  [subject] fold 2 loss 0.043  96s
+  [subject] fold 3 loss 0.042  123s
+  [subject] fold 4 loss 0.030  154s
+  [subject] fold 5 loss 0.052  185s
+fu_s0_nosess_s0 subject  macro-F1=0.7513 quality=60.1/80 F1 Rest/Stress/Act=[0.791 0.571 0.892]
+  confusion (rows = true Rest/Stress/Activity):
+[[4774  596  677]
+ [ 406  742   49]
+ [ 839   66 6741]]
+  [session] fold 0 loss 0.029  30s
+  [session] fold 1 loss 0.039  58s
+  [session] fold 2 loss 0.036  88s
+  [session] fold 3 loss 0.066  119s
+  [session] fold 4 loss 0.039  147s
+  [session] fold 5 loss 0.054  175s
+fu_s0_nosess_s0 session  macro-F1=0.7563 quality=60.5/80 F1 Rest/Stress/Act=[0.796 0.563 0.91 ]
+  confusion (rows = true Rest/Stress/Activity):
+[[4639  676  732]
+ [ 403  754   40]
+ [ 565   53 7028]]
+params 72531
+ALLDONE

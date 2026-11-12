@@ -1,0 +1,26 @@
+args: --u_class 1 --bnd 3 --pool 10 --dils 1,2,4,8 --seed 2 --tag u4so_p10d4_s2
+model=tcn features=175 sessions=85 device=cuda
+  [subject] fold 0 loss 0.204  69s
+  [subject] fold 1 loss 0.267  141s
+  [subject] fold 2 loss 0.192  216s
+  [subject] fold 3 loss 0.239  288s
+  [subject] fold 4 loss 0.233  361s
+  [subject] fold 5 loss 0.152  434s
+u4so_p10d4_s2 subject  macro-F1=0.7795 quality=62.4/80 F1 Rest/Stress/Act=[0.823 0.598 0.918]
+  confusion (rows = true Rest/Stress/Activity):
+[[4915  595  537]
+ [ 370  788   39]
+ [ 617   55 6974]]
+  [session] fold 0 loss 0.282  74s
+  [session] fold 1 loss 0.292  146s
+  [session] fold 2 loss 0.254  218s
+  [session] fold 3 loss 0.388  291s
+  [session] fold 4 loss 0.146  362s
+  [session] fold 5 loss 0.364  430s
+u4so_p10d4_s2 session  macro-F1=0.7888 quality=63.1/80 F1 Rest/Stress/Act=[0.83  0.62  0.916]
+  confusion (rows = true Rest/Stress/Activity):
+[[5034  465  548]
+ [ 396  771   30]
+ [ 646   54 6946]]
+params 46423
+ALLDONE

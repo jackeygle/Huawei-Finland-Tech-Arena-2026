@@ -1,0 +1,26 @@
+args: --model gru --steps 3000 --seed 0 --tag gru_s0
+model=gru features=175 sessions=85 device=cuda
+  [subject] fold 0 loss 0.012  64s
+  [subject] fold 1 loss 0.015  127s
+  [subject] fold 2 loss 0.023  189s
+  [subject] fold 3 loss 0.018  252s
+  [subject] fold 4 loss 0.011  316s
+  [subject] fold 5 loss 0.013  381s
+gru_s0 subject  macro-F1=0.7437 quality=59.5/80 F1 Rest/Stress/Act=[0.796 0.534 0.9  ]
+  confusion (rows = true Rest/Stress/Activity):
+[[4839  610  598]
+ [ 481  691   25]
+ [ 785   89 6772]]
+  [session] fold 0 loss 0.012  70s
+  [session] fold 1 loss 0.009  135s
+  [session] fold 2 loss 0.015  201s
+  [session] fold 3 loss 0.011  265s
+  [session] fold 4 loss 0.017  328s
+  [session] fold 5 loss 0.013  392s
+gru_s0 session  macro-F1=0.7658 quality=61.3/80 F1 Rest/Stress/Act=[0.808 0.577 0.912]
+  confusion (rows = true Rest/Stress/Activity):
+[[4841  616  590]
+ [ 428  762    7]
+ [ 663   67 6916]]
+params 39459
+ALLDONE

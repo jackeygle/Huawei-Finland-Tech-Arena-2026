@@ -1,0 +1,26 @@
+variant: --featdrop 0.3 --tag tcnA_featdrop0.3
+model=tcn features=175 sessions=85 device=cuda
+  [subject] fold 0 loss 0.041  33s
+  [subject] fold 1 loss 0.060  67s
+  [subject] fold 2 loss 0.079  103s
+  [subject] fold 3 loss 0.092  139s
+  [subject] fold 4 loss 0.036  173s
+  [subject] fold 5 loss 0.084  207s
+tcnA_featdrop0.3 subject  macro-F1=0.7575 quality=60.6/80 F1 Rest/Stress/Act=[0.803 0.573 0.896]
+  confusion (rows = true Rest/Stress/Activity):
+[[4879  637  531]
+ [ 375  785   37]
+ [ 856  119 6671]]
+  [session] fold 0 loss 0.075  34s
+  [session] fold 1 loss 0.052  68s
+  [session] fold 2 loss 0.057  102s
+  [session] fold 3 loss 0.109  135s
+  [session] fold 4 loss 0.049  169s
+  [session] fold 5 loss 0.077  203s
+tcnA_featdrop0.3 session  macro-F1=0.7622 quality=61.0/80 F1 Rest/Stress/Act=[0.797 0.581 0.908]
+  confusion (rows = true Rest/Stress/Activity):
+[[4648  708  691]
+ [ 348  804   45]
+ [ 619   57 6970]]
+params 74451
+ALLDONE

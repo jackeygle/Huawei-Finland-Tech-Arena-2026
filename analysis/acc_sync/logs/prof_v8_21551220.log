@@ -1,0 +1,26 @@
+Model name:                              Intel(R) Xeon(R) Gold 6248 CPU @ 2.50GHz
+== session 43 ANAEROBIC/f02: rows 126987  seconds 1985
+run() total                                  29.89 ms
+  features() total                           21.61 ms
+    base_1hz (index->sec, 1 Hz channels)      6.60 ms
+    context_features (rolling/rel/sess)       5.36 ms
+    signal: eda (SCR)                         1.91 ms
+    signal: bvp spectrum                      3.23 ms
+    signal: hrv                               1.64 ms
+  onnx TCN                                    1.22 ms
+  decode_u4so (date: 3 templates)             4.01 ms
+  decode_u4so (no date: 6 templates)          6.83 ms
+  output DataFrame                            1.57 ms
+== session 70 STRESS/f01: rows 201305  seconds 3146
+run() total                                  39.69 ms
+  features() total                           28.78 ms
+    base_1hz (index->sec, 1 Hz channels)      5.56 ms
+    context_features (rolling/rel/sess)       8.29 ms
+    signal: eda (SCR)                         2.52 ms
+    signal: bvp spectrum                      4.96 ms
+    signal: hrv                               2.42 ms
+  onnx TCN                                    1.84 ms
+  decode_u4so (date: 3 templates)             5.19 ms
+  decode_u4so (no date: 6 templates)          8.79 ms
+  output DataFrame                            2.42 ms
+ALLDONE

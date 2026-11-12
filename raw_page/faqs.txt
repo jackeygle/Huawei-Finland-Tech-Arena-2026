@@ -1,0 +1,106 @@
+Huawei Tech Arena - 2026 Finland Tech Arena
+Platform
+Home
+Explore
+helpHelp and supportHelp and support
+My account
+Create an account
+Log in
+menuHuawei Tech Arena
+Explore
+Create an account
+Log in
+2026 Finland Tech Arena
+AI in Health
+group
+Teams of
+1 - 5 people
+shareShareShare on facebook [https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhuawei.agorize.com%2Fen%2Fchallenges%2F2026-finland-tech-arena%2Fpages%2Ffaqs%3Flang%3Den]
+Share on twitter [https://twitter.com/intent/tweet?text=I+have+applied+to+2026+Finland+Tech+Arena+powered+by+%40agorize%21 https%3A%2F%2Fhuawei.agorize.com%2Fen%2Fchallenges%2F2026-finland-tech-arena%2Fpages%2Ffaqs%3Flang%3Den]
+Share on linkedin [https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fhuawei.agorize.com%2Fen%2Fchallenges%2F2026-finland-tech-arena%2Fpages%2Ffaqs%3Flang%3Den&name=2026+Finland+Tech+Arena&summary=I+have+applied+to+2026+Finland+Tech+Arena+powered+by+Agorize%21+Find+out+more%3A+https%253A%252F%252Fhuawei.agorize.com%252Fen%252Fchallenges%252F2026-finland-tech-arena%252Fpages%252Ffaqs%253Flang%253Den%27]
+account_boxShare on mail
+shareShareShare on facebook [https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhuawei.agorize.com%2Fen%2Fchallenges%2F2026-finland-tech-arena%2Fpages%2Ffaqs%3Flang%3Den]
+Share on twitter [https://twitter.com/intent/tweet?text=I+have+applied+to+2026+Finland+Tech+Arena+powered+by+%40agorize%21 https%3A%2F%2Fhuawei.agorize.com%2Fen%2Fchallenges%2F2026-finland-tech-arena%2Fpages%2Ffaqs%3Flang%3Den]
+Share on linkedin [https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fhuawei.agorize.com%2Fen%2Fchallenges%2F2026-finland-tech-arena%2Fpages%2Ffaqs%3Flang%3Den&name=2026+Finland+Tech+Arena&summary=I+have+applied+to+2026+Finland+Tech+Arena+powered+by+Agorize%21+Find+out+more%3A+https%253A%252F%252Fhuawei.agorize.com%252Fen%252Fchallenges%252F2026-finland-tech-arena%252Fpages%252Ffaqs%253Flang%253Den%27]
+account_boxShare on mail
+2026 Finland Tech Arena
+Participate
+Brief
+How it Works
+Topic Description
+About Huawei
+FAQs
+Leaderboard
+Discussion
+Terms & Conditions
+Frequently Asked Questions
+Participation
+How do I sign up to join the competition?
+You can sign up HERE [https://huawei.agorize.com/en/challenges/2026-finland-tech-arena?lang=en].
+First click on “Create an account” and follow the instructions. Then click the red “Participate now!” button on the platform [https://huawei.agorize.com/en/challenges/2026-finland-tech-arena/pages/topic-description?lang=en] to finalize your participant account. You can then submit your proposal!
+You will receive a confirmation email upon registration. If not, please email [email protected].
+How can I get the latest updates about the Competition?
+When there is an update, you will receive an email from the admin on the Agorize platform and a notification at your provided email address. Please make sure you have clicked ‘Participate’ and check your junk mailbox!
+Can I change my details after registering for the competition?
+To update your details, log in at LINK [https://huawei.agorize.com/en/challenges/2026-finland-tech-arena?lang=en] and go to your participant profile and/or space to edit or change your details.
+How can I join an already existing team or invite friends and colleagues to join my team?
+After completing the registration process, you will see options to join an existing team or create your own. Additionally, you can go to the Team page on our website to manage your team. To help your friends join your team, share the webpage with them. They can follow the registration instructions provided to find and join your team easily.
+Eligibility
+What are the eligibility criteria?
+To be eligible for this competition, you are:
+18 years or older
+Non-Huawei employee
+Registered at a Higher Education Institution in Europe
+Studying data science, machine learning, biomedical or electrical engineering, signal processing, sports science, and related fields
+Undergrad/Master/PHD student
+Participant who has graduated up to 2 years ago are also eligible
+Who should be on our team?
+Your team can include:
+Students who are currently in undergraduate, Master's, or PhD programs.
+Students who are enrolled at a higher education institution in Europe.
+Students studying data science, machine learning, biomedical or electrical engineering, signal processing, sports science, and related fields.
+Important Points:
+Teams can have up to 5 members.
+Each participant can only be a member of one team per problem.
+What programming language should be used for the deliverables?
+All deliverables must be in Python.
+Registration Phase
+For the registration phase, what do I need to submit?
+During the Registration Phase, each team must complete the registration process. Submission of the participation form is required to be submitted by Dec 1st., 2026 at 23:59 EET (CET).
+What is the deadline to register?
+The deadline for registration is Dec. 1st, 2026 at 23:59 EET (CET).
+Submission
+Can I modify my submission after submitting it?
+Yes, you can modify your submission during submission phase before the final deadline of Dec. 1st, 2026 at 23:59 EET (CET). However, there is a limit of three submission modifications per day.
+When will I know more details about online challenge?
+Participants will have more information about the challenge to tackle during submission phase.
+What do I need to submit for this online challenge?
+Project Submission: you will need to submit a Python file exposing get_model() that returns a class implementing ADM_Base base class as defined in adm_base_class.py. The trained model in ONNX format must also be uploaded next to the source file, using the same basename and .onnx extension.
+These two files should be uploaded in one .zip file. For the next submission, edit the previous one by changing the .zip file.
+Make sure your submission is uploaded on the Agorize platform before the deadline: Dec. 1st, 2026 at 23:59 EET (CET). Participants can check the specific format and detailed submission instructions through Topic Description [https://huawei.agorize.com/en/challenges/2026-finland-tech-arena/pages/topic-description?lang=en].
+How will ties be broken in the competition?
+If two or more submissions have the same score, the following tiebreakers will be used:
+The submissions will be evaluated by the Mentors based on the model’s feasibility for low-resource wearable devices and the submission with best feasibility wins.
+On-site Final
+What are the travel and accommodation arrangements for the On-site Final in Helsinki?
+Up to Ten winning teams will be invited to Helsinki, Finland to join the on-site Final event (half day).
+Finalists travelling to the Helsinki final from outside Helsinki can have their travel and accommodation costs reimbursed up to €500 per person, against receipts. Details of the reimbursement process will be shared with finalist teams after selection.
+What is included in On-site Final?
+The On-site Final will take place on December 11th in Helsinki, Finland.
+Selected teams will pitch their innovative solutions to a panel of Huawei experts for a chance to win cash prizes or internship opportunities.
+When will the winners be announced?
+Announcement of the winners will be made on December 4th, 2026.
+Prizes
+What kind of prizes can we expect in the Final competition?
+The top teams of the Final will compete for the following cash prizes:
+A cash reward of EUR 6,000 to One first-prize team
+A cash reward of EUR 3,000 to each of the Two second-prize teams
+A cash reward of EUR 1,500 to each of The three third-prize teams
+Are there any career opportunities available for participants?
+Yes, a total of 6 top performing teams among the finalist teams will be offered internship opportunities within Huawei.
+Participate
+Sitemap
+Terms of use
+Privacy policy
+Cookie settings
+Huawei Tech Arena - Powered by Agorize [https://get.agorize.com?utm_medium=brand&utm_source=huawei.agorize.com&utm_campaign=footer]
