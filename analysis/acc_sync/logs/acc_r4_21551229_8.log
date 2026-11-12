@@ -14,3 +14,13 @@ p10st6k_s2 subject  macro-F1=0.7845 quality=62.8/80 F1 Rest/Stress/Act=[0.828 0.
   [session] fold 0 loss 0.301  139s
   [session] fold 1 loss 0.238  278s
   [session] fold 2 loss 0.270  416s
+  [session] fold 3 loss 0.202  554s
+  [session] fold 4 loss 0.183  694s
+  [session] fold 5 loss 0.246  833s
+p10st6k_s2 session  macro-F1=0.7895 quality=63.2/80 F1 Rest/Stress/Act=[0.832 0.618 0.919]
+  confusion (rows = true Rest/Stress/Activity):
+[[5067  422  558]
+ [ 443  747    7]
+ [ 619   53 6974]]
+params 46423
+ALLDONE
